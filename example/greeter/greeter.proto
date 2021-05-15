@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.itzmanish.micro.greeter;
+option go_package = "example/greeter;greeter";
+
+service Greeter {
+  rpc Hello(Request) returns (Response) {};
+  rpc ClientStream(stream Request) returns (Response) {};
+  rpc ServerStream(Request) returns (stream Response) {};
+  rpc Stream(stream Request) returns (stream Response) {};
+}
+
+message Request { string name = 1; }
+
+message Response { string msg = 1; }
