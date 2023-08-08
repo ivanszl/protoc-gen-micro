@@ -1,4 +1,4 @@
-module github.com/itzmanish/protoc-gen-micro
+module github.com/ivanszl/protoc-gen-micro
 
 go 1.15
 
